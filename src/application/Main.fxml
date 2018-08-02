@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="565.0" prefWidth="837.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainPageController">
+   <children>
+      <Button id="CompareButton" layoutX="376.0" layoutY="513.0" mnemonicParsing="false" onAction="#showResult" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #FFA500;" text="Compare" />
+      <Button id="UploadFile1" layoutX="22.0" layoutY="46.0" mnemonicParsing="false" onAction="#file1Chooser" prefHeight="450.0" prefWidth="372.0" />
+      <Button id="UploadFile2" layoutX="438.0" layoutY="46.0" mnemonicParsing="false" onAction="#file2Chooser" prefHeight="450.0" prefWidth="372.0" />
+      <Label id="FileLabel2" fx:id="FileLabel2" alignment="CENTER" layoutX="525.0" layoutY="459.0" prefHeight="20.0" prefWidth="199.0" text="Upload Java File" />
+      <Label id="FileLabel1" fx:id="FileLabel1" alignment="CENTER" layoutX="109.0" layoutY="459.0" prefHeight="20.0" prefWidth="199.0" text="Upload Java File" />
+      <ImageView fx:id="File1Image" fitHeight="183.0" fitWidth="123.0" layoutX="152.0" layoutY="204.0" onMouseClicked="#file1Chooser" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@java_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="File2Image" fitHeight="130.0" fitWidth="123.0" layoutX="569.0" layoutY="204.0" onMouseClicked="#file2Chooser" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@java_icon.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fx:id="BackImage" fitHeight="35.0" fitWidth="31.0" layoutX="18.0" layoutY="8.0" onMouseClicked="#backToType" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      
+   </children>
+</AnchorPane>

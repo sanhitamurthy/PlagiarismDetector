@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="565.0" prefWidth="837.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FolderResultDetailController">
+   <children>
+      <Button layoutX="366.0" layoutY="506.0" mnemonicParsing="false" onMouseClicked="#backToPercentageResult" prefHeight="36.0" prefWidth="105.0" text="Back" />
+      <Label fx:id="File1Label" alignment="CENTER" layoutX="100.0" layoutY="5.0" prefHeight="36.0" prefWidth="224.0" text="File1">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="File2Label" alignment="CENTER" layoutX="540.0" layoutY="3.0" prefHeight="36.0" prefWidth="224.0" text="File2">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <ScrollPane fitToWidth="true" layoutX="14.0" layoutY="42.0" prefHeight="444.0" prefWidth="390.0">
+         <content>
+            <TextFlow id="File1TextFlow" fx:id="File1TextFlow" layoutX="14.0" layoutY="42.0" maxHeight="444" prefHeight="444.0" prefWidth="390.0" style="-fx-background-color: #F8F8FF;" />
+         </content>
+      </ScrollPane>
+      <ScrollPane fitToWidth="true" layoutX="434.0" layoutY="42.0" prefHeight="444.0" prefWidth="390.0">
+         <content>
+            <TextFlow id="File2TextFlow" fx:id="File2TextFlow" layoutX="434.0" layoutY="42.0" maxHeight="444" prefHeight="444.0" prefWidth="390.0" style="-fx-background-color: #F8F8FF;" />
+         </content>
+      </ScrollPane>
+      <ImageView fx:id="PrevFile1" fitHeight="30.0" fitWidth="30.0" layoutX="19.0" layoutY="7.0" onMouseClicked="#prevFile1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@left.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="NextFile1" fitHeight="36.0" fitWidth="36.0" layoutX="352.0" layoutY="4.0" onMouseClicked="#nextFile1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@right.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="NextFile2" fitHeight="36.0" fitWidth="36.0" layoutX="775.0" layoutY="4.0" onMouseClicked="#nextFile2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@right.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PrevFile2" fitHeight="30.0" fitWidth="30.0" layoutX="442.0" layoutY="7.0" onMouseClicked="#prevFile2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@left.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="565.0" prefWidth="837.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PercentageResultController">
+   <children>
+      <Button id="BackToMainButton" fx:id="BackToMainButton" layoutX="354.0" layoutY="473.0" mnemonicParsing="false" onMouseClicked="#backToMainPage" prefHeight="38.0" prefWidth="129.0" text="Back" />
+      <Button id="ViewDetailButton" fx:id="ViewDetailButton" layoutX="354.0" layoutY="409.0" mnemonicParsing="false" onMouseClicked="#viewDetail" prefHeight="38.0" prefWidth="129.0" text="View Details" wrapText="true" />
+      <Label id="PercentageResultLabel" fx:id="PercentageResultLabel" alignment="CENTER" layoutX="215.0" layoutY="100.0" prefHeight="182.0" prefWidth="407.0" text="-- %">
+         <font>
+            <Font size="90.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

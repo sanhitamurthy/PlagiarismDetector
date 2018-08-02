@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="565.0" prefWidth="837.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ResultDetailController">
+   <children>
+      <Button layoutX="366.0" layoutY="506.0" mnemonicParsing="false" onMouseClicked="#backToPercentageResult" prefHeight="36.0" prefWidth="105.0" text="Back" />
+      <Label fx:id="File1Label" layoutX="14.0" layoutY="6.0" prefHeight="36.0" prefWidth="256.0" text="File1">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="File2Label" layoutX="434.0" layoutY="6.0" prefHeight="36.0" prefWidth="256.0" text="File2">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <ScrollPane layoutX="14.0" layoutY="42.0" prefHeight="444.0" prefWidth="390.0" fitToWidth="true">
+         <TextFlow id="File1TextFlow" fx:id="File1TextFlow" layoutX="14.0" layoutY="42.0" prefHeight="444.0" maxHeight="444" prefWidth="390.0" style="-fx-background-color: #F8F8FF;" />
+      </ScrollPane>
+      <ScrollPane layoutX="434.0" layoutY="42.0" prefHeight="444.0" prefWidth="390.0" fitToWidth="true">
+         <TextFlow id="File2TextFlow" fx:id="File2TextFlow" layoutX="434.0" layoutY="42.0" prefHeight="444.0" maxHeight="444" prefWidth="390.0" style="-fx-background-color: #F8F8FF;" />
+      </ScrollPane>
+   </children>
+</AnchorPane>

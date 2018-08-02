@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="565.0" prefWidth="837.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FolderMainPageController">
+   <children>
+      <Button id="CompareButton" layoutX="378.0" layoutY="514.0" mnemonicParsing="false" onAction="#showResult" prefHeight="31.0" prefWidth="82.0" style="-fx-background-color: #87CEFA;" text="Compare" />
+      <Button id="UploadFolder1" layoutX="22.0" layoutY="46.0" mnemonicParsing="false" onAction="#folder1Chooser" prefHeight="450.0" prefWidth="372.0" />
+      <Button id="UploadFolder2" layoutX="438.0" layoutY="46.0" mnemonicParsing="false" onAction="#folder2Chooser" prefHeight="450.0" prefWidth="372.0" />
+      <Label id="FolderLabel2" fx:id="FolderLabel2" alignment="CENTER" layoutX="525.0" layoutY="459.0" prefHeight="20.0" prefWidth="199.0" text="Upload Folder" />
+      <Label id="FolderLabel1" fx:id="FolderLabel1" alignment="CENTER" layoutX="109.0" layoutY="459.0" prefHeight="20.0" prefWidth="199.0" text="Upload Folder" />
+      <ImageView id="Folder2Image" fx:id="Folder2Image" cache="true" fitHeight="130.0" fitWidth="123.0" layoutX="569.0" layoutY="208.0" onMouseClicked="#folder2Chooser" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@if_icon-95-folder_314938.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Folder1Image" fx:id="Folder1Image" cache="true" fitHeight="183.0" fitWidth="123.0" layoutX="152.0" layoutY="208.0" onMouseClicked="#folder1Chooser" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@if_icon-95-folder_314938.png" />
+         </image>
+      </ImageView>
+      
+      <ImageView fx:id="BackImage" fitHeight="35.0" fitWidth="31.0" layoutX="18.0" layoutY="8.0" onMouseClicked="#backToType" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      
+   </children>
+</AnchorPane>
